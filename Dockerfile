@@ -3,4 +3,4 @@ FROM eclipse-temurin:17-jdk
 COPY target/*.jar app.jar
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
-# Jenkins webhook test 1
+# Jenkins webhook test 2

@@ -33,7 +33,7 @@ pipeline {
 
         stage('Docker Build') {
             steps {
-                bat "docker build -t sindhu54/mavenjava:latest ."
+                bat 'docker build -t tejaswinitingirkar/mavenjava:latest .'
             }
         }
 
@@ -47,7 +47,7 @@ pipeline {
                     )
                 ]) {
                     bat "docker login -u %DOCKER_USERNAME% -p %DOCKER_PASSWORD%"
-                    bat "docker push sindhu54/mavenjava:latest"
+                    bat 'docker push tejaswinitingirkar/mavenjava:latest'
                 }
             }
         }
